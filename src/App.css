@@ -27,13 +27,47 @@ input[type="checkbox"] {
   box-shadow: inset 0 1px 3px rgba(0,0,0,.3);
 }
 
-.tw-header--signup,
-.tw-header--login {
+.nav-container {
+  position: fixed;
   display: inline-block;
-  position: relative; 
-  height: 2.5em;
-  padding-left: 1em;
-  font-size: .8em;
+  margin-right: 4rem;
+  border: 1px solid lightgrey;
+  line-height: 3rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.tw-header--nav {
+  display: flex;
+  float: right;
+  margin-right: 4rem;
+}
+
+.signup-link {
+  /* padding-left: 3em; */
+  /* font-size: .9em; */
+  text-decoration: none;
+  color: white;
+}
+.login-link {
   text-decoration: none;
   color: #1da1f2;
+}
+.signup-link:hover,
+.login-link:hover {
+  font-weight: 500;
+}
+
+
+.fa-twitter {
+  float: left;
+  margin-left: 4rem;
+  line-height: 3rem;
+  font-size: 2rem;
+}
+
+.tw-header--back_button,
+.back_buttonn {
+  float: left;
 }
