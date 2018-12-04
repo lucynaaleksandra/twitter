@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .App-header {
   background-color: white;
   min-height: 100vh;
@@ -9,13 +13,9 @@
   color: #1da1f2;
   text-align: center;
 }
-
 .App-link {
   color: #1d7ebb;
-
-  /* color: #34373b */
 }
-
 input[type="checkbox"] {
   content: "";
   position: absolute; 
@@ -27,7 +27,32 @@ input[type="checkbox"] {
   box-shadow: inset 0 1px 3px rgba(0,0,0,.3);
 }
 
-.nav-container {
+/* .tw-header--nav { */
+  /* display: inline-block; */
+  /* float: right;
+  margin-right: 4rem;
+} */
+
+.fa-twitter {
+  float: left;
+  margin-left: 4rem;
+  margin-bottom: .5rem;
+  font-size: 2.3rem;
+  color: #1da1f2;
+  /* background: #eef3f7; */
+  /* background: #f5f7f8; */
+}
+
+.tw-header--back_button,
+.back_buttonn {
+  float: left;
+  font-size: 2rem;
+  color: #1da1f2;
+}
+
+
+
+/* .nav-container {
   position: fixed;
   display: inline-block;
   margin-right: 4rem;
@@ -36,18 +61,13 @@ input[type="checkbox"] {
   top: 0;
   left: 0;
   width: 100%;
-}
+} */
 
-.tw-header--nav {
-  display: flex;
-  float: right;
-  margin-right: 4rem;
-}
 
-.signup-link {
+/* .signup-link { */
   /* padding-left: 3em; */
   /* font-size: .9em; */
-  text-decoration: none;
+  /* text-decoration: none;
   color: white;
 }
 .login-link {
@@ -57,17 +77,5 @@ input[type="checkbox"] {
 .signup-link:hover,
 .login-link:hover {
   font-weight: 500;
-}
+} */
 
-
-.fa-twitter {
-  float: left;
-  margin-left: 4rem;
-  line-height: 3rem;
-  font-size: 2rem;
-}
-
-.tw-header--back_button,
-.back_buttonn {
-  float: left;
-}

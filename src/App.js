@@ -9,14 +9,9 @@ class App extends React.Component {
   render() {
     return (
       <div id="#root" className="App-header">
-        {/* <header> */}
-          {/* <nav>
-            <Link to="/" className="tw-header--signup">Signup</Link>
-            <Link to="/login" className="tw-header--login">Login</Link>
-          </nav> */}
-        {/* </header> */}
         <Route path="/" component={Signup} exact={true} />
         <Route path="/login" component={Login} />
+        <Route path="/signup" component={Signup} />
         <Route path="/dashboard" component={Dashboard} />
       </div>
     )
